@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HXR Materials Site
 
-## Getting Started
+Minimal, technical, trust-focused website framework for HXR Materials built with Next.js App Router, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For production verification:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Content Editing
 
-To learn more about Next.js, take a look at the following resources:
+All page copy is stored in `src/content`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Brand and shared site info: `src/content/brand.ts`
+- Home page copy: `src/content/home.ts`
+- Product data: `src/content/products/sogut.ts`
+- Downloads list: `src/content/downloads.ts`
+- Manufacturer page: `src/content/manufacturer.ts`
+- Contact page: `src/content/contact.ts`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## PDF Placement
 
-## Deploy on Vercel
+Place downloadable PDFs in `public/downloads`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Expected files:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `public/downloads/HXR_SOGUT_Technical_Overview.pdf`
+- `public/downloads/SOGUT_SDS_Component_A.pdf`
+- `public/downloads/SOGUT_SDS_Component_B.pdf`
+
+Update labels/paths in `src/content/downloads.ts` if filenames change.
+
+## Vercel Deployment
+
+1. Push this repository to GitHub.
+2. In Vercel, click **Add New Project** and import the repository.
+3. Keep defaults for Next.js framework detection.
+4. Build command: `npm run build`.
+5. Output setting: default Next.js output.
+6. Deploy and verify routes:
+   - `/`
+   - `/products/sogut-socketing-resin`
+   - `/downloads`
+   - `/manufacturer`
+   - `/contact`
+7. Add custom domain in Vercel project settings if needed.
