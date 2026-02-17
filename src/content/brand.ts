@@ -6,7 +6,7 @@ export const brand = {
     "Manufactured by Hubei Haixing Rui New Material Technology Co., Ltd., an established industrial resin producer with controlled formulation and batch production capabilities.",
   technicalPositioning:
     "Ambient-temperature alternative to traditional molten alloy socket casting for marine and infrastructure wire rope terminations.",
-  email: "contact@hxrmaterials.com",
+  email: "info@hxrmaterials.com",
   navigation: [
     { label: "Home", href: "/" },
     { label: "Product", href: "/products/sogut-socketing-resin" },
