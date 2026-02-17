@@ -34,6 +34,7 @@ export default function SogutProductPage() {
         <div className="mt-4">
           <SpecTable specs={[...sogutProduct.specs]} />
           <p className="mt-3 text-sm text-slate-600">{sogutProduct.sections.performanceFootnote}</p>
+          <p className="mt-2 text-sm text-slate-600">{sogutProduct.performanceDisclaimer}</p>
         </div>
       </Section>
 
@@ -110,13 +111,20 @@ export default function SogutProductPage() {
       <Section surface="slate" withDivider>
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <h2 className="text-xl font-semibold text-slate-900">{sogutProduct.sections.cta}</h2>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <CTAButton href={sogutProduct.cta.href} label={sogutProduct.cta.label} />
-            <CTAButton
-              href={sogutProduct.secondaryCta.href}
-              label={sogutProduct.secondaryCta.label}
-              variant="secondary"
-            />
+          <div>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <CTAButton href={sogutProduct.cta.href} label={sogutProduct.cta.label} />
+              <CTAButton
+                href={sogutProduct.secondaryCta.href}
+                label={sogutProduct.secondaryCta.label}
+                variant="secondary"
+              />
+            </div>
+            <div className="mt-3 space-y-1 text-sm text-slate-600">
+              {sogutProduct.ctaNotes.map((note) => (
+                <p key={note}>{note}</p>
+              ))}
+            </div>
           </div>
         </div>
       </Section>

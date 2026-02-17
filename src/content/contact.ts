@@ -2,6 +2,11 @@ export const contactContent = {
   title: "Contact",
   intro:
     "For technical requests, procurement discussions, or sample inquiries, use the form below or contact us directly by email.",
+  distributorNotes: [
+    "Distribution inquiries welcome.",
+    "Regional partnership discussions available.",
+    "Please include intended application, region, and expected annual volume (if known).",
+  ],
   emailLabel: "Contact Email",
   form: {
     nameLabel: "Name",

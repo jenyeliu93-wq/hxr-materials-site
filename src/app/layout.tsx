@@ -6,9 +6,10 @@ import { Footer } from "@/components/site/Footer";
 import { brand } from "@/content/brand";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hxrmaterials.com";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.hxrmaterials.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: `${brand.name} | ${brand.tagline}`,
     template: `%s | ${brand.name}`,
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${brand.name} | ${brand.tagline}`,
     description: brand.technicalPositioning,
-    url: "https://www.hxrmaterials.com",
+    url: siteUrl,
     siteName: brand.name,
     type: "website",
   },

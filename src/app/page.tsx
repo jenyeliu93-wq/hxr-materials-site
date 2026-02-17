@@ -14,9 +14,9 @@ export default function HomePage() {
   return (
     <>
       <Section className="bg-slate-950 py-24 md:py-28">
-        <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl">{brand.name}</h1>
+        <h1 className="text-5xl font-bold tracking-tight text-slate-100 md:text-6xl">{brand.name}</h1>
         <p className="mt-4 text-sm font-semibold uppercase tracking-[0.22em] text-slate-300">{brand.tagline}</p>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-200">{brand.technicalPositioning}</p>
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-400">{brand.technicalPositioning}</p>
         <div className="mt-10 flex flex-wrap gap-3">
           <CTAButton
             href={homeContent.hero.primaryCta.href}

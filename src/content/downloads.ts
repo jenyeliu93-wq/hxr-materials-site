@@ -4,6 +4,9 @@ export type DownloadItem = {
   description: string;
 };
 
+export const downloadsIntro =
+  "Additional laboratory reports and project-specific validation documentation are available upon request.";
+
 export const downloads: DownloadItem[] = [
   {
     title: "SOGUT® Socketing Resin – Technical Data Sheet",

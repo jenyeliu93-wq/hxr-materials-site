@@ -76,6 +76,12 @@ export default function ContactPage() {
           {contactContent.form.submitLabel}
         </button>
       </form>
+
+      <div className="mt-10 max-w-3xl space-y-2 leading-relaxed text-slate-700">
+        {contactContent.distributorNotes.map((note) => (
+          <p key={note}>{note}</p>
+        ))}
+      </div>
     </Section>
   );
 }

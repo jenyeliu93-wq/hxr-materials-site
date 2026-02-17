@@ -20,7 +20,7 @@ const VARIANT_CLASSES: Record<CTAButtonVariant, string> = {
   primaryOnDark:
     "bg-white text-slate-900 hover:bg-slate-200 focus-visible:outline-white",
   secondaryOnDark:
-    "border border-slate-600 text-slate-300 hover:bg-slate-900/40 focus-visible:outline-slate-200",
+    "border border-slate-500 text-slate-200 hover:bg-slate-800 focus-visible:outline-slate-200",
 };
 
 export function CTAButton({

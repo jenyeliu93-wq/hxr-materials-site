@@ -13,7 +13,7 @@ export const sogutProduct = {
     overview: "Overview",
     performance: "Mechanical Performance",
     performanceFootnote:
-      "Representative laboratory results. Detailed test reports available upon request.",
+      "Representative laboratory results verified by a CNAS-accredited testing laboratory under applicable GB/T standards. Additional project-specific validation (including ASTM) can be coordinated upon request.",
     applications: "Applications",
     advantages: "Engineering Advantages",
     installation: "Installation Overview",
@@ -24,6 +24,8 @@ export const sogutProduct = {
     cta: "Need qualification samples or technical documentation?",
     downloads: "Downloads",
   },
+  performanceDisclaimer:
+    "Performance values are typical laboratory results and are not design guarantees.",
   overview: [
     "Two-component cold-pour socketing resin for structural wire rope terminations in marine and civil infrastructure applications.",
     "Designed for ambient-temperature installation as an alternative to molten alloy socket casting.",
@@ -104,4 +106,8 @@ export const sogutProduct = {
     label: "Request Technical Documentation",
     href: "/contact",
   },
+  ctaNotes: [
+    "Qualification sample kits available upon request.",
+    "Shipping coordinated under applicable dangerous goods regulations.",
+  ],
 } as const;
